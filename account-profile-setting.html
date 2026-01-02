@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Account Settings - A-Services Classified Ads</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <style>
+      .account-section {
+        padding: 80px 0;
+      }
+      .account-sidebar {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .account-sidebar .nav-link {
+        color: #495057;
+        padding: 12px 20px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        transition: all 0.3s;
+      }
+      .account-sidebar .nav-link:hover {
+        background: #e9ecef;
+        color: #007bff;
+      }
+      .account-sidebar .nav-link.active {
+        background: #007bff;
+        color: white;
+      }
+      .account-content {
+        background: white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      }
+      .profile-avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #007bff;
+      }
+      .avatar-upload {
+        position: relative;
+        display: inline-block;
+      }
+      .avatar-upload-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .stats-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .stats-card h3 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+      }
+      .recent-activity {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+      .activity-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .activity-item:last-child {
+        border-bottom: none;
+      }
+      .activity-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #007bff;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="lni-menu"></span>
+              <span class="lni-menu"></span>
+              <span class="lni-menu"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">
+                  Categories
+                </a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Listings
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="adlistinggrid.html">Ad Grid</a>
+                  <a class="dropdown-item" href="adlistinglist.html">Ad Listing</a>
+                  <a class="dropdown-item" href="ads-details.html">Listing Detail</a>
+                </div>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pages 
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="about.html">About Us</a>
+                  <a class="dropdown-item" href="services.html">Services</a>
+                  <a class="dropdown-item" href="ads-details.html">Ads Details</a>
+                  <a class="dropdown-item" href="post-ads.html">Ads Post</a>
+                  <a class="dropdown-item" href="pricing.html">Packages</a>
+                  <a class="dropdown-item" href="testimonial.html">Testimonial</a>
+                  <a class="dropdown-item" href="faq.html">FAQ</a>
+                  <a class="dropdown-item" href="404.html">404</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Blog 
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="blog.html">Blog</a>
+                  <!-- <a class="dropdown-item" href="blog-left-sidebar.html">Blog - Left Sidebar</a> -->
+                  <!-- <a class="dropdown-item" href="blog-grid-full-width.html"> Blog full width </a> -->
+                  <a class="dropdown-item" href="single-post.html">Blog Details</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <ul class="sign-in">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="lni-user"></i> My Account</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item active" href="account-profile-setting.html"><i class="lni-home"></i> Account Home</a>
+                  <!-- <a class="dropdown-item" href="account-myads.html"><i class="lni-wallet"></i> My Ads</a>
+                  <a class="dropdown-item" href="account-favourite-ads.html"><i class="lni-heart"></i> Favourite ads</a>
+                  <a class="dropdown-item" href="account-archived-ads.html"><i class="lni-folder"></i> Archived</a>
+                  <a class="dropdown-item" href="login.html"><i class="lni-lock"></i> Log In</a>
+                  <a class="dropdown-item" href="signup.html"><i class="lni-user"></i> Signup</a>
+                  <a class="dropdown-item" href="forgot-password.html"><i class="lni-reload"></i> Forgot Password</a>
+                  <a class="dropdown-item" href="account-close.html"><i class="lni-close"></i>Account close</a> -->
+                </div>
+              </li>
+            </ul>
+            <a class="tg-btn" href="post-ads.html">
+              <i class="lni-pencil-alt"></i> Post Ad
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="category.html">Categories</a>
+          </li>
+          <!-- <li>
+            <a href="#">
+            Listings
+            </a>
+            <ul class="dropdown">
+              <li><a href="adlistinggrid.html">Ad Grid</a></li>
+              <li><a href="adlistinglist.html">Ad Listing</a></li>
+              <li><a href="ads-details.html">Listing Detail</a></li>
+            </ul>
+          </li> -->
+          <li>
+            <a href="#">Pages</a>
+            <ul class="dropdown">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="ads-details.html">Ads Details</a></li>
+              <li><a href="post-ads.html">Ads Post</a></li>
+              <li><a href="pricing.html">Packages</a></li>
+              <li><a href="testimonial.html">Testimonial</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="404.html">404</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+            <ul class="dropdown">
+              <li><a href="blog.html">Blog </a></li>
+              <!-- <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a></li>
+              <li><a href="blog-grid-full-width.html"> Blog full width </a></li> -->
+              <li><a href="single-post.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a>My Account</a>
+            <ul class="dropdown">
+              <li><a class="active" href="account-profile-setting.html"><i class="lni-home"></i> Account Home</a></li>
+              <!-- <li><a href="account-myads.html"><i class="lni-wallet"></i> My Ads</a></li>
+              <li><a href="account-favourite-ads.html"><i class="lni-heart"></i> Favourite ads</a></li>
+              <li><a href="account-archived-ads.html"><i class="lni-folder"></i> Archived</a></li>
+              <li><a href="login.html"><i class="lni-lock"></i> Log In</a></li>
+              <li><a href="signup.html"><i class="lni-user"></i> Signup</a></li>
+              <li><a href="forgot-password.html"><i class="lni-reload"></i> Forgot Password</a></li>
+              <li><a href="account-close.html"><i class="lni-close"></i>Account close</a></li> -->
+            </ul>
+          </li>
+          <a class="tg-btn" href="post-ads.html">
+              <i class="lni-pencil-alt"></i> Post Ad
+            </a>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url(assets/img/banner1.jpg);">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="product-title">Account Settings</h2>
+              <ol class="breadcrumb">
+                <li><a href="index.html">Home /</a></li>
+                <li class="current">Account Settings</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Account Section Start -->
+    <section class="account-section">
+      <div class="container">
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-lg-3 col-md-4">
+            <div class="account-sidebar">
+              <div class="text-center mb-4">
+                <img src="https://picsum.photos/seed/user-avatar/120/120.jpg" alt="Profile" class="profile-avatar mb-3">
+                <h5>John Doe</h5>
+                <p class="text-muted">Premium Member</p>
+              </div>
+              
+              <nav class="nav flex-column">
+                <a class="nav-link active" href="#profile">
+                  <i class="lni-user"></i> Profile Settings
+                </a>
+                <a class="nav-link" href="#security">
+                  <i class="lni-shield"></i> Security
+                </a>
+                <a class="nav-link" href="#notifications">
+                  <i class="lni-bell"></i> Notifications
+                </a>
+                <a class="nav-link" href="#privacy">
+                  <i class="lni-lock"></i> Privacy
+                </a>
+                <a class="nav-link" href="#billing">
+                  <i class="lni-credit-cards"></i> Billing
+                </a>
+                <a class="nav-link" href="#help">
+                  <i class="lni-question"></i> Help & Support
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="col-lg-9 col-md-8">
+            <!-- Profile Settings -->
+            <div class="account-content" id="profile">
+              <h3>Profile Settings</h3>
+              <p class="text-muted mb-4">Update your personal information and profile details</p>
+              
+              <form id="profileForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="firstName">First Name</label>
+                      <input type="text" class="form-control" id="firstName" value="John">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" value="Doe">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control" id="email" value="john.doe@example.com">
+                  <small class="form-text text-muted">Your email is used for account notifications</small>
+                </div>
+                
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" value="+1 (555) 123-4567">
+                </div>
+                
+                <div class="form-group">
+                  <label for="bio">Bio</label>
+                  <textarea class="form-control" id="bio" rows="3" placeholder="Tell us about yourself...">Passionate about buying and selling quality items. Trusted seller with 100+ successful transactions.</textarea>
+                </div>
+                
+                <div class="form-group">
+                  <label for="location">Location</label>
+                  <input type="text" class="form-control" id="location" value="New York, NY">
+                </div>
+                
+                <div class="form-group">
+                  <label>Profile Picture</label>
+                  <div class="avatar-upload">
+                    <img src="https://picsum.photos/seed/user-avatar/120/120.jpg" alt="Profile" class="profile-avatar">
+                    <button type="button" class="avatar-upload-btn">
+                      <i class="lni-camera"></i>
+                    </button>
+                    <input type="file" id="avatarInput" style="display: none;" accept="image/*">
+                  </div>
+                  <small class="form-text text-muted">JPG, PNG or GIF. Maximum size 2MB</small>
+                </div>
+                
+                <button type="submit" class="btn btn-common">Save Changes</button>
+              </form>
+            </div>
+
+            <!-- Account Statistics -->
+            <div class="row mt-4">
+              <div class="col-md-4">
+                <div class="stats-card">
+                  <h3>127</h3>
+                  <p>Total Ads Posted</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="stats-card">
+                  <h3>4.8</h3>
+                  <p>Average Rating</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="stats-card">
+                  <h3>98%</h3>
+                  <p>Response Rate</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="mt-5">
+              <h4>Recent Activity</h4>
+              <div class="recent-activity">
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="lni-pencil-alt"></i>
+                  </div>
+                  <div>
+                    <h6>Posted new ad: "MacBook Pro 16" - M2 Max"</h6>
+                    <small class="text-muted">2 hours ago</small>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="lni-star"></i>
+                  </div>
+                  <div>
+                    <h6>Received 5-star review from Sarah Johnson</h6>
+                    <small class="text-muted">1 day ago</small>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="lni-check-mark-circle"></i>
+                  </div>
+                  <div>
+                    <h6>Sold item: "iPhone 14 Pro"</h6>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Security Settings (Hidden by default) -->
+            <div class="account-content mt-4" id="security" style="display: none;">
+              <h3>Security Settings</h3>
+              <p class="text-muted mb-4">Manage your password and security preferences</p>
+              
+              <form>
+                <div class="form-group">
+                  <label for="currentPassword">Current Password</label>
+                  <input type="password" class="form-control" id="currentPassword">
+                </div>
+                
+                <div class="form-group">
+                  <label for="newPassword">New Password</label>
+                  <input type="password" class="form-control" id="newPassword">
+                  <small class="form-text text-muted">Password must be at least 8 characters long</small>
+                </div>
+                
+                <div class="form-group">
+                  <label for="confirmPassword">Confirm New Password</label>
+                  <input type="password" class="form-control" id="confirmPassword">
+                </div>
+                
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="twoFactor">
+                    <label class="custom-control-label" for="twoFactor">Enable two-factor authentication</label>
+                  </div>
+                </div>
+                
+                <button type="submit" class="btn btn-common">Update Password</button>
+              </form>
+            </div>
+
+            <!-- Notification Settings (Hidden by default) -->
+            <div class="account-content mt-4" id="notifications" style="display: none;">
+              <h3>Notification Settings</h3>
+              <p class="text-muted mb-4">Choose how you want to be notified</p>
+              
+              <form>
+                <h5>Email Notifications</h5>
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="emailMessages" checked>
+                    <label class="custom-control-label" for="emailMessages">New messages from buyers</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="emailOffers" checked>
+                    <label class="custom-control-label" for="emailOffers">Special offers and promotions</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="emailUpdates">
+                    <label class="custom-control-label" for="emailUpdates">Platform updates and news</label>
+                  </div>
+                </div>
+                
+                <h5 class="mt-4">Push Notifications</h5>
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="pushMessages" checked>
+                    <label class="custom-control-label" for="pushMessages">New messages</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="pushActivity">
+                    <label class="custom-control-label" for="pushActivity">Account activity</label>
+                  </div>
+                </div>
+                
+                <button type="submit" class="btn btn-common">Save Preferences</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Account Section End -->
+
+    <!-- Subscribe Section Start -->
+    <section class="subscribes section-padding">
+      <div class="container">
+        <div class="row wrapper-sub">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Join our 10,000+ subscribers and get access to the latest services, offer, discount and pleasure!</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <form>
+              <div class="subscribe">
+                <input class="form-control" name="email" placeholder="Your email here" required="" type="email">
+                <button class="btn btn-common" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <!-- Footer Area Start -->
+      <section class="footer-Content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">About Us</h3>
+                <div class="textwidget">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis. Etiam euismod ornare elementum. Sed ex est, consectetur eget facilisis sed, auctor ut purus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Useful Links</h3>
+                <ul class="menu">
+                  <li><a href="#">How to Use Services</a></li>
+                  <li><a href="#">Membership Details</a></li>
+                  <li><a href="#">Why Choose Us</a></li>
+                  <li><a href="#">Latest Services</a></li>
+                  <li><a href="#">Using This Platform</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Help & Support</h3>
+                <ul class="menu">
+                  <li><a href="#">Terms & Condition</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Risk Protection</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Contact Information</h3>
+                <ul class="contact-footer">
+                  <li>
+                    <strong>Address :</strong><span>1900 Pico Blvd, New York</span>
+                  </li>
+                  <li>
+                    <strong>Phone :</strong><span>+48 123 456 789</span>
+                  </li>
+                  <li>
+                    <strong>E-mail :</strong><span><a href="#">info@a-services.com</a></span>
+                  </li>
+                </ul>  
+                <ul class="footer-social">
+                  <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a></li>
+                  <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
+                </ul>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer area End -->
+      
+      <!-- Copyright Start  -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="site-info float-left">
+                <p>All copyrights reserved &copy; 2026 - Designed by MVC Co.</p>
+              </div>              
+              <div class="float-right">  
+                <ul class="bottom-card">
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card1.jpg" alt="card"></a>
+                  </li>
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card2.jpg" alt="card"></a>
+                  </li>
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card3.jpg" alt="card"></a>
+                  </li>
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card4.jpg" alt="card"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright End -->
+
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Custom JavaScript for Account Settings Page -->
+    <script>
+      $(document).ready(function() {
+        // Sidebar navigation
+        $('.account-sidebar .nav-link').on('click', function(e) {
+          e.preventDefault();
+          
+          // Remove active class from all links
+          $('.account-sidebar .nav-link').removeClass('active');
+          
+          // Add active class to clicked link
+          $(this).addClass('active');
+          
+          // Hide all content sections
+          $('.account-content').hide();
+          
+          // Show corresponding content
+          const target = $(this).attr('href');
+          if (target === '#profile') {
+            $('#profile').show();
+          } else if (target === '#security') {
+            $('#security').show();
+          } else if (target === '#notifications') {
+            $('#notifications').show();
+          }
+          // Future Enhancement: Add more sections for privacy, billing, help
+        });
+
+        // Profile form submission
+        $('#profileForm').on('submit', function(e) {
+          e.preventDefault();
+          
+          const formData = {
+            firstName: $('#firstName').val(),
+            lastName: $('#lastName').val(),
+            email: $('#email').val(),
+            phone: $('#phone').val(),
+            bio: $('#bio').val(),
+            location: $('#location').val()
+          };
+          
+          // Basic validation
+          if (!formData.firstName || !formData.lastName || !formData.email) {
+            alert('Please fill in all required fields');
+            return;
+          }
+          
+          // Email validation
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(formData.email)) {
+            alert('Please enter a valid email address');
+            return;
+          }
+          
+          // Show success message
+          alert('Profile updated successfully!');
+          
+          // Update sidebar name
+          $('.account-sidebar h5').text(formData.firstName + ' ' + formData.lastName);
+          
+          // Future Enhancement: Implement actual profile update to backend
+          console.log('Profile updated:', formData);
+        });
+
+        // Avatar upload
+        $('.avatar-upload-btn').on('click', function() {
+          $('#avatarInput').click();
+        });
+
+        $('#avatarInput').on('change', function(e) {
+          const file = e.target.files[0];
+          if (file) {
+            // Check file size
+            if (file.size > 2 * 1024 * 1024) {
+              alert('File size must be less than 2MB');
+              return;
+            }
+            
+            // Check file type
+            if (!file.type.match('image.*')) {
+              alert('Please select an image file');
+              return;
+            }
+            
+            // Preview image
+            const reader = new FileReader();
+            reader.onload = function(e) {
+              $('.profile-avatar').attr('src', e.target.result);
+              alert('Profile picture updated!');
+              // Future Enhancement: Implement actual image upload
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+
+        // Security form submission
+        $('#security form').on('submit', function(e) {
+          e.preventDefault();
+          
+          const currentPassword = $('#currentPassword').val();
+          const newPassword = $('#newPassword').val();
+          const confirmPassword = $('#confirmPassword').val();
+          
+          if (!currentPassword || !newPassword || !confirmPassword) {
+            alert('Please fill in all password fields');
+            return;
+          }
+          
+          if (newPassword.length < 8) {
+            alert('Password must be at least 8 characters long');
+            return;
+          }
+          
+          if (newPassword !== confirmPassword) {
+            alert('New passwords do not match');
+            return;
+          }
+          
+          alert('Password updated successfully!');
+          $(this)[0].reset();
+          // Future Enhancement: Implement actual password update
+        });
+
+        // Notification settings submission
+        $('#notifications form').on('submit', function(e) {
+          e.preventDefault();
+          
+          const notificationSettings = {
+            emailMessages: $('#emailMessages').is(':checked'),
+            emailOffers: $('#emailOffers').is(':checked'),
+            emailUpdates: $('#emailUpdates').is(':checked'),
+            pushMessages: $('#pushMessages').is(':checked'),
+            pushActivity: $('#pushActivity').is(':checked')
+          };
+          
+          alert('Notification preferences saved!');
+          console.log('Notification settings:', notificationSettings);
+          // Future Enhancement: Implement actual notification settings update
+        });
+
+        // Phone number formatting
+        $('#phone').on('input', function() {
+          let value = $(this).val().replace(/\D/g, '');
+          if (value.length > 0) {
+            if (value.length <= 3) {
+              value = value;
+            } else if (value.length <= 6) {
+              value = value.slice(0, 3) + '-' + value.slice(3);
+            } else if (value.length <= 10) {
+              value = value.slice(0, 3) + '-' + value.slice(3, 6) + '-' + value.slice(6);
+            } else {
+              value = value.slice(0, 3) + '-' + value.slice(3, 6) + '-' + value.slice(6, 10);
+            }
+          }
+          $(this).val(value);
+        });
+
+        // Two-factor authentication toggle
+        $('#twoFactor').on('change', function() {
+          if ($(this).is(':checked')) {
+            alert('Two-factor authentication will be enabled. You will need to verify your identity with a code sent to your phone.');
+            // Future Enhancement: Implement 2FA setup process
+          }
+        });
+
+        // Account statistics animation
+        function animateStats() {
+          $('.stats-card h3').each(function() {
+            const $this = $(this);
+            const countTo = $this.text();
+            
+            if (countTo.includes('.')) {
+              // Handle decimal numbers
+              const decimalCount = countTo.split('.')[1].length;
+              $this.text('0.0');
+              $({ countNum: 0 }).animate({
+                countNum: parseFloat(countTo)
+              }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function() {
+                  $this.text(this.countNum.toFixed(decimalCount));
+                },
+                complete: function() {
+                  $this.text(countTo);
+                }
+              });
+            } else if (countTo.includes('%')) {
+              // Handle percentages
+              const percentage = parseInt(countTo);
+              $this.text('0%');
+              $({ countNum: 0 }).animate({
+                countNum: percentage
+              }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function() {
+                  $this.text(Math.ceil(this.countNum) + '%');
+                },
+                complete: function() {
+                  $this.text(countTo);
+                }
+              });
+            } else {
+              // Handle whole numbers
+              $this.text('0');
+              $({ countNum: 0 }).animate({
+                countNum: parseInt(countTo)
+              }, {
+                duration: 2000,
+                easing: 'swing',
+                step: function() {
+                  $this.text(Math.ceil(this.countNum));
+                },
+                complete: function() {
+                  $this.text(countTo);
+                }
+              });
+            }
+          });
+        }
+
+        // Trigger stats animation when page loads
+        animateStats();
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Blog Details - A-Services Classified Ads</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <style>
+      .blog-content {
+        font-size: 16px;
+        line-height: 1.8;
+      }
+      .blog-content h2, .blog-content h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .blog-content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+      .blog-meta {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e0e0e0;
+        flex-wrap: wrap;
+      }
+      .blog-meta span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #666;
+      }
+      .author-bio {
+        background: #f8f9fa;
+        padding: 25px;
+        border-radius: 8px;
+        margin: 40px 0;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .author-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .related-posts {
+        margin-top: 50px;
+      }
+      .related-post-card {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s;
+      }
+      .related-post-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+      .related-post-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+      .related-post-content {
+        padding: 15px;
+      }
+      .comment-section {
+        margin-top: 50px;
+      }
+      .comment {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .comment-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .social-share {
+        display: flex;
+        gap: 10px;
+        margin: 30px 0;
+      }
+      .social-share a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+        text-decoration: none;
+        transition: transform 0.3s;
+      }
+      .social-share a:hover {
+        transform: scale(1.1);
+        text-decoration: none;
+        color: white;
+      }
+      .social-share .facebook { background: #3b5998; }
+      .social-share .twitter { background: #1da1f2; }
+      .social-share .linkedin { background: #0077b5; }
+      .social-share .whatsapp { background: #25d366; }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="lni-menu"></span>
+              <span class="lni-menu"></span>
+              <span class="lni-menu"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">
+                  Categories
+                </a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Listings
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="adlistinggrid.html">Ad Grid</a>
+                  <a class="dropdown-item" href="adlistinglist.html">Ad Listing</a>
+                  <a class="dropdown-item" href="ads-details.html">Listing Detail</a>
+                </div>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pages 
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="about.html">About Us</a>
+                  <a class="dropdown-item" href="services.html">Services</a>
+                  <a class="dropdown-item" href="ads-details.html">Ads Details</a>
+                  <a class="dropdown-item" href="post-ads.html">Ads Post</a>
+                  <a class="dropdown-item" href="pricing.html">Packages</a>
+                  <a class="dropdown-item" href="testimonial.html">Testimonial</a>
+                  <a class="dropdown-item" href="faq.html">FAQ</a>
+                  <a class="dropdown-item" href="404.html">404</a>
+                </div>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Blog 
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="blog.html">Blog</a>
+                  <!-- <a class="dropdown-item" href="blog-left-sidebar.html">Blog - Left Sidebar</a> -->
+                  <!-- <a class="dropdown-item" href="blog-grid-full-width.html"> Blog full width </a> -->
+                  <a class="dropdown-item" href="single-post.html">Blog Details</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <ul class="sign-in">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="lni-user"></i> My Account</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="account-profile-setting.html"><i class="lni-home"></i> Account Home</a>
+                  <!-- <a class="dropdown-item" href="account-myads.html"><i class="lni-wallet"></i> My Ads</a>
+                  <a class="dropdown-item" href="account-favourite-ads.html"><i class="lni-heart"></i> Favourite ads</a>
+                  <a class="dropdown-item" href="account-archived-ads.html"><i class="lni-folder"></i> Archived</a>
+                  <a class="dropdown-item" href="login.html"><i class="lni-lock"></i> Log In</a>
+                  <a class="dropdown-item" href="signup.html"><i class="lni-user"></i> Signup</a>
+                  <a class="dropdown-item" href="forgot-password.html"><i class="lni-reload"></i> Forgot Password</a>
+                  <a class="dropdown-item" href="account-close.html"><i class="lni-close"></i>Account close</a> -->
+                </div>
+              </li>
+            </ul>
+            <a class="tg-btn" href="post-ads.html">
+              <i class="lni-pencil-alt"></i> Post Ad
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="category.html">Categories</a>
+          </li>
+          <!-- <li>
+            <a href="#">
+            Listings
+            </a>
+            <ul class="dropdown">
+              <li><a href="adlistinggrid.html">Ad Grid</a></li>
+              <li><a href="adlistinglist.html">Ad Listing</a></li>
+              <li><a href="ads-details.html">Listing Detail</a></li>
+            </ul>
+          </li> -->
+          <li>
+            <a href="#">Pages</a>
+            <ul class="dropdown">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="ads-details.html">Ads Details</a></li>
+              <li><a href="post-ads.html">Ads Post</a></li>
+              <li><a href="pricing.html">Packages</a></li>
+              <li><a href="testimonial.html">Testimonial</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="404.html">404</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+            <ul class="dropdown">
+              <li><a href="blog.html">Blog </a></li>
+              <!-- <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a></li>
+              <li><a href="blog-grid-full-width.html"> Blog full width </a></li> -->
+              <li><a class="active" href="single-post.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a>My Account</a>
+            <ul class="dropdown">
+              <li><a href="account-profile-setting.html"><i class="lni-home"></i> Account Home</a></li>
+              <!-- <li><a href="account-myads.html"><i class="lni-wallet"></i> My Ads</a></li>
+              <li><a href="account-favourite-ads.html"><i class="lni-heart"></i> Favourite ads</a></li>
+              <li><a href="account-archived-ads.html"><i class="lni-folder"></i> Archived</a></li>
+              <li><a href="login.html"><i class="lni-lock"></i> Log In</a></li>
+              <li><a href="signup.html"><i class="lni-user"></i> Signup</a></li>
+              <li><a href="forgot-password.html"><i class="lni-reload"></i> Forgot Password</a></li>
+              <li><a href="account-close.html"><i class="lni-close"></i>Account close</a></li> -->
+            </ul>
+          </li>
+          <a class="tg-btn" href="post-ads.html">
+              <i class="lni-pencil-alt"></i> Post Ad
+            </a>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url(assets/img/banner1.jpg);">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="product-title">Blog Details</h2>
+              <ol class="breadcrumb">
+                <li><a href="index.html">Home /</a></li>
+                <li><a href="blog.html">Blog /</a></li>
+                <li class="current">Blog Details</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Blog Post Section Start -->
+    <section class="blog-post section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <!-- Blog Post Content -->
+            <article class="blog-content">
+              <h1>How to Write Effective Classified Ads That Sell Fast</h1>
+              
+              <div class="blog-meta">
+                <span><i class="lni-calendar"></i> January 15, 2026</span>
+                <span><i class="lni-user"></i> Admin</span>
+                <span><i class="lni-folder"></i> Tips & Tricks</span>
+                <span><i class="lni-comments"></i> 12 Comments</span>
+                <span><i class="lni-eye"></i> 1,234 Views</span>
+              </div>
+
+              <img src="https://picsum.photos/seed/blog-main/800/400.jpg" alt="Blog Post Main Image" class="img-fluid">
+
+              <p>Writing effective classified ads is both an art and a science. Whether you're selling a car, furniture, electronics, or services, the right approach can make the difference between a quick sale and an item that sits for weeks. In this comprehensive guide, we'll share proven strategies to help you create compelling ads that attract buyers and close deals faster.</p>
+
+              <h2>1. Craft a Compelling Headline</h2>
+              <p>Your headline is the first thing potential buyers see, and it determines whether they'll click on your ad. A great headline should be:</p>
+              <ul>
+                <li><strong>Specific:</strong> Include the make, model, and key features</li>
+                <li><strong>Benefit-oriented:</strong> Highlight what makes your item special</li>
+                <li><strong>Concise:</strong> Keep it under 60 characters for mobile viewing</li>
+              </ul>
+              
+              <p><strong>Example:</strong> Instead of "Car for Sale," use "2018 Honda Civic EX-L - Low Miles, Excellent Condition"</p>
+
+              <img src="https://picsum.photos/seed/blog-example1/600/300.jpg" alt="Example of good ad headline" class="img-fluid">
+
+              <h2>2. Write a Detailed Description</h2>
+              <p>The body of your ad should provide all the information a buyer needs to make an informed decision. Include:</p>
+              
+              <h3>Essential Details</h3>
+              <ul>
+                <li>Age/condition of the item</li>
+                <li>Reason for selling</li>
+                <li>Any defects or issues (be honest!)</li>
+                <li>Original purchase price (if relevant)</li>
+                <li>Special features or upgrades</li>
+              </ul>
+
+              <h3>Storytelling Approach</h3>
+              <p>People connect with stories. Instead of just listing facts, tell a brief story about your item. For example: "I bought this laptop for my graduate studies, and it served me perfectly through late-night study sessions and research projects. Now that I've graduated, I'm selling it to someone who will appreciate its reliability."</p>
+
+              <h2>3. Take High-Quality Photos</h2>
+              <p>Photos can make or break your ad. Follow these photography tips:</p>
+              
+              <ul>
+                <li><strong>Use natural light:</strong> Take photos during the day near windows</li>
+                <li><strong>Clean the item:</strong> Remove dust and arrange neatly</li>
+                <li><strong>Show multiple angles:</strong> Include front, back, sides, and close-ups of details</li>
+                <li><strong>Include scale:</strong> Show the item's size relative to common objects</li>
+                <li><strong>Avoid filters:</strong> Keep photos authentic and true-to-life</li>
+              </ul>
+
+              <img src="https://picsum.photos/seed/blog-photos/600/350.jpg" alt="Good product photography example" class="img-fluid">
+
+              <h2>4. Price It Right</h2>
+              <p>Pricing is crucial for attracting serious buyers. Research similar items on our platform to determine a competitive price. Consider:</p>
+              
+              <ul>
+                <li>Market demand and seasonality</li>
+                <li>Item condition and age</li>
+                <li>Original retail price</li>
+                <li>Recent sales of similar items</li>
+              </ul>
+
+              <p><strong>Pro Tip:</strong> Price slightly higher than your minimum to leave room for negotiation, but not so high that you scare away potential buyers.</p>
+
+              <h2>5. Optimize for Search</h2>
+              <p>Help buyers find your ad by including relevant keywords naturally in your description. Think about what terms buyers would search for when looking for your item.</p>
+
+              <h2>6. Respond Quickly to Inquiries</h2>
+              <p>Fast responses show you're a serious seller and help maintain buyer interest. Aim to respond within a few hours, and always be polite and professional in your communications.</p>
+
+              <h2>7. Safety First</h2>
+              <p>Always prioritize safety when meeting buyers. Choose public locations, bring a friend if possible, and trust your instincts. Never share personal financial information.</p>
+
+              <h2>Conclusion</h2>
+              <p>Writing effective classified ads takes practice, but following these guidelines will significantly improve your chances of making quick, successful sales. Remember to be honest, detailed, and responsive throughout the process.</p>
+
+              <p><strong>Ready to start selling?</strong> <a href="post-ads.html">Post your ad now</a> and put these tips into practice!</p>
+
+              <!-- Social Share -->
+              <div class="social-share">
+                <span class="mr-3">Share this post:</span>
+                <a href="#" class="facebook"><i class="lni-facebook-filled"></i></a>
+                <a href="#" class="twitter"><i class="lni-twitter-filled"></i></a>
+                <a href="#" class="linkedin"><i class="lni-linkedin-fill"></i></a>
+                <a href="#" class="whatsapp"><i class="lni-whatsapp"></i></a>
+              </div>
+
+              <!-- Author Bio -->
+              <div class="author-bio">
+                <img src="https://picsum.photos/seed/author/80/80.jpg" alt="Author" class="author-avatar">
+                <div>
+                  <h4>About the Author</h4>
+                  <p>John Smith is a marketing expert with over 10 years of experience in e-commerce and digital marketing. He specializes in helping small businesses and individuals maximize their online selling potential through effective advertising strategies.</p>
+                  <div class="social-links">
+                    <a href="#"><i class="lni-facebook-filled"></i></a>
+                    <a href="#"><i class="lni-twitter-filled"></i></a>
+                    <a href="#"><i class="lni-linkedin-fill"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Comments Section -->
+            <div class="comment-section">
+              <h3>Comments (12)</h3>
+              
+              <!-- Comment 1 -->
+              <div class="comment">
+                <div class="d-flex gap-3">
+                  <img src="https://picsum.photos/seed/user1/50/50.jpg" alt="Commenter" class="comment-avatar">
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h6 class="mb-0">Sarah Johnson</h6>
+                      <small>2 days ago</small>
+                    </div>
+                    <p>Great tips! I especially appreciate the advice about pricing. I've been struggling with that aspect.</p>
+                    <button class="btn btn-sm btn-link">Reply</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Comment 2 -->
+              <div class="comment">
+                <div class="d-flex gap-3">
+                  <img src="https://picsum.photos/seed/user2/50/50.jpg" alt="Commenter" class="comment-avatar">
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h6 class="mb-0">Michael Chen</h6>
+                      <small>3 days ago</small>
+                    </div>
+                    <p>The photography tips are spot on! I've definitely seen better results since I started taking better photos.</p>
+                    <button class="btn btn-sm btn-link">Reply</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Leave a Comment Form -->
+              <div class="comment-form mt-4">
+                <h4>Leave a Comment</h4>
+                <form>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="4" placeholder="Your comment..." required></textarea>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-common">Post Comment</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-4 col-md-12">
+            <!-- Related Posts -->
+            <div class="related-posts">
+              <h4>Related Posts</h4>
+              <div class="related-post-card mb-3">
+                <img src="https://picsum.photos/seed/related1/400/150.jpg" alt="Related Post 1">
+                <div class="related-post-content">
+                  <h6><a href="#">10 Safety Tips for Buying and Selling Online</a></h6>
+                  <small>Jan 12, 2026</small>
+                </div>
+              </div>
+              <div class="related-post-card mb-3">
+                <img src="https://picsum.photos/seed/related2/400/150.jpg" alt="Related Post 2">
+                <div class="related-post-content">
+                  <h6><a href="#">How to Price Your Items for Maximum Profit</a></h6>
+                  <small>Jan 5, 2026</small>
+                </div>
+              </div>
+              <div class="related-post-card">
+                <img src="https://picsum.photos/seed/related3/400/150.jpg" alt="Related Post 3">
+                <div class="related-post-content">
+                  <h6><a href="#">From Side Hustle to Full-Time Business</a></h6>
+                  <small>Jan 8, 2026</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="sidebar-widget mt-4">
+              <h4>Categories</h4>
+              <ul class="categories-list">
+                <li><a href="#"><i class="lni-chevron-right"></i> Tips & Tricks (8)</a></li>
+                <li><a href="#"><i class="lni-chevron-right"></i> Safety (5)</a></li>
+                <li><a href="#"><i class="lni-chevron-right"></i> Success Stories (12)</a></li>
+                <li><a href="#"><i class="lni-chevron-right"></i> Technology (7)</a></li>
+              </ul>
+            </div>
+
+            <!-- Tags -->
+            <div class="sidebar-widget mt-4">
+              <h4>Tags</h4>
+              <div class="tag-cloud">
+                <a href="#">classifieds</a>
+                <a href="#">selling</a>
+                <a href="#">tips</a>
+                <a href="#">marketing</a>
+                <a href="#">photos</a>
+                <a href="#">pricing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Post Section End -->
+
+    <!-- Subscribe Section Start -->
+    <section class="subscribes section-padding">
+      <div class="container">
+        <div class="row wrapper-sub">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Join our 10,000+ subscribers and get access to the latest services, offer, discount and pleasure!</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <form>
+              <div class="subscribe">
+                <input class="form-control" name="email" placeholder="Your email here" required="" type="email">
+                <button class="btn btn-common" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <!-- Footer Area Start -->
+      <section class="footer-Content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">About Us</h3>
+                <div class="textwidget">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis. Etiam euismod ornare elementum. Sed ex est, consectetur eget facilisis sed, auctor ut purus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Useful Links</h3>
+                <ul class="menu">
+                  <li><a href="#">How to Use Services</a></li>
+                  <li><a href="#">Membership Details</a></li>
+                  <li><a href="#">Why Choose Us</a></li>
+                  <li><a href="#">Latest Services</a></li>
+                  <li><a href="#">Using This Platform</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Help & Support</h3>
+                <ul class="menu">
+                  <li><a href="#">Terms & Condition</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Risk Protection</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Contact Information</h3>
+                <ul class="contact-footer">
+                  <li>
+                    <strong>Address :</strong><span>1900 Pico Blvd, New York</span>
+                  </li>
+                  <li>
+                    <strong>Phone :</strong><span>+48 123 456 789</span>
+                  </li>
+                  <li>
+                    <strong>E-mail :</strong><span><a href="#">info@a-services.com</a></span>
+                  </li>
+                </ul>  
+                <ul class="footer-social">
+                  <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a></li>
+                  <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
+                </ul>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer area End -->
+      
+      <!-- Copyright Start  -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="site-info float-left">
+                <p>All copyrights reserved &copy; 2026 - Designed by MVC Co.</p>
+              </div>              
+              <div class="float-right">  
+                <ul class="bottom-card">
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card1.jpg" alt="card"></a>
+                  </li>
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card2.jpg" alt="card"></a>
+                  </li>
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card3.jpg" alt="card"></a>
+                  </li>
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card4.jpg" alt="card"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright End -->
+
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Custom JavaScript for Single Post Page -->
+    <script>
+      $(document).ready(function() {
+        // Social share functionality
+        $('.social-share a').on('click', function(e) {
+          e.preventDefault();
+          const platform = $(this).attr('class').split(' ')[1];
+          const url = window.location.href;
+          const title = $('h1').text();
+          
+          let shareUrl = '';
+          switch(platform) {
+            case 'facebook':
+              shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+              break;
+            case 'twitter':
+              shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`;
+              break;
+            case 'linkedin':
+              shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+              break;
+            case 'whatsapp':
+              shareUrl = `https://wa.me/?text=${encodeURIComponent(title + ' ' + url)}`;
+              break;
+          }
+          
+          window.open(shareUrl, '_blank', 'width=600,height=400');
+        });
+
+        // Comment form submission
+        $('.comment-form form').on('submit', function(e) {
+          e.preventDefault();
+          const comment = $(this).find('textarea').val();
+          const name = $(this).find('input[type="text"]').val();
+          const email = $(this).find('input[type="email"]').val();
+          
+          if (comment && name && email) {
+            alert('Thank you for your comment! It will be reviewed and published shortly.');
+            $(this)[0].reset();
+            // Future Enhancement: Implement actual comment submission
+          }
+        });
+
+        // Reply functionality
+        $('.comment button').on('click', function() {
+          const commenterName = $(this).closest('.comment').find('h6').text();
+          $('.comment-form textarea').val('@' + commenterName + ' ').focus();
+        });
+
+        // Related posts hover effect
+        $('.related-post-card').hover(
+          function() {
+            $(this).addClass('shadow-lg');
+          },
+          function() {
+            $(this).removeClass('shadow-lg');
+          }
+        );
+
+        // Reading progress indicator
+        function updateReadingProgress() {
+          const scrollTop = $(window).scrollTop();
+          const docHeight = $('.blog-content').height();
+          const winHeight = $(window).height();
+          const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+          
+          if (scrollPercent > 0 && scrollPercent < 100) {
+            // Future Enhancement: Add reading progress bar
+            console.log('Reading progress: ' + scrollPercent.toFixed(0) + '%');
+          }
+        }
+
+        $(window).on('scroll', updateReadingProgress);
+      });
+    </script>
+
+  </body>
+</html>

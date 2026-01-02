@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>FAQ - A-Services Classified Ads</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <style>
+      .faq-section {
+        padding: 80px 0;
+      }
+      .faq-item {
+        margin-bottom: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .faq-question {
+        padding: 20px;
+        background: #f8f9fa;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        text-align: left;
+        font-weight: 600;
+        position: relative;
+        transition: background 0.3s;
+      }
+      .faq-question:hover {
+        background: #e9ecef;
+      }
+      .faq-question.active {
+        background: #007bff;
+        color: white;
+      }
+      .faq-question::after {
+        content: '+';
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        transition: transform 0.3s;
+      }
+      .faq-question.active::after {
+        transform: translateY(-50%) rotate(45deg);
+      }
+      .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+      }
+      .faq-answer.show {
+        padding: 20px;
+        max-height: 500px;
+      }
+      .faq-category {
+        margin-bottom: 40px;
+      }
+      .faq-category h3 {
+        color: #007bff;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #007bff;
+      }
+      .search-faq {
+        max-width: 600px;
+        margin: 0 auto 40px;
+      }
+      .search-faq input {
+        border-radius: 25px;
+        padding: 12px 20px;
+        border: 2px solid #e0e0e0;
+      }
+      .search-faq input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+      }
+      .help-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .help-card h4 {
+        margin-bottom: 15px;
+      }
+      .contact-options {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .contact-option {
+        background: rgba(255,255,255,0.1);
+        padding: 15px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        color: white;
+        transition: background 0.3s;
+      }
+      .contact-option:hover {
+        background: rgba(255,255,255,0.2);
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="lni-menu"></span>
+              <span class="lni-menu"></span>
+              <span class="lni-menu"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">
+                  Categories
+                </a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Listings
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="adlistinggrid.html">Ad Grid</a>
+                  <a class="dropdown-item" href="adlistinglist.html">Ad Listing</a>
+                  <a class="dropdown-item" href="ads-details.html">Listing Detail</a>
+                </div>
+              </li> -->
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pages 
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="about.html">About Us</a>
+                  <a class="dropdown-item" href="services.html">Services</a>
+                  <a class="dropdown-item" href="ads-details.html">Ads Details</a>
+                  <a class="dropdown-item" href="post-ads.html">Ads Post</a>
+                  <a class="dropdown-item" href="pricing.html">Packages</a>
+                  <a class="dropdown-item" href="testimonial.html">Testimonial</a>
+                  <a class="dropdown-item" href="faq.html">FAQ</a>
+                  <a class="dropdown-item" href="404.html">404</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Blog 
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="blog.html">Blog</a>
+                  <!-- <a class="dropdown-item" href="blog-left-sidebar.html">Blog - Left Sidebar</a> -->
+                  <!-- <a class="dropdown-item" href="blog-grid-full-width.html"> Blog full width </a> -->
+                  <a class="dropdown-item" href="single-post.html">Blog Details</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <ul class="sign-in">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="lni-user"></i> My Account</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="account-profile-setting.html"><i class="lni-home"></i> Account Home</a>
+                  <!-- <a class="dropdown-item" href="account-myads.html"><i class="lni-wallet"></i> My Ads</a>
+                  <a class="dropdown-item" href="account-favourite-ads.html"><i class="lni-heart"></i> Favourite ads</a>
+                  <a class="dropdown-item" href="account-archived-ads.html"><i class="lni-folder"></i> Archived</a>
+                  <a class="dropdown-item" href="login.html"><i class="lni-lock"></i> Log In</a>
+                  <a class="dropdown-item" href="signup.html"><i class="lni-user"></i> Signup</a>
+                  <a class="dropdown-item" href="forgot-password.html"><i class="lni-reload"></i> Forgot Password</a>
+                  <a class="dropdown-item" href="account-close.html"><i class="lni-close"></i>Account close</a> -->
+                </div>
+              </li>
+            </ul>
+            <a class="tg-btn" href="post-ads.html">
+              <i class="lni-pencil-alt"></i> Post Ad
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="category.html">Categories</a>
+          </li>
+          <!-- <li>
+            <a href="#">
+            Listings
+            </a>
+            <ul class="dropdown">
+              <li><a href="adlistinggrid.html">Ad Grid</a></li>
+              <li><a href="adlistinglist.html">Ad Listing</a></li>
+              <li><a href="ads-details.html">Listing Detail</a></li>
+            </ul>
+          </li> -->
+          <li>
+            <a href="#">Pages</a>
+            <ul class="dropdown">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="ads-details.html">Ads Details</a></li>
+              <li><a href="post-ads.html">Ads Post</a></li>
+              <li><a href="pricing.html">Packages</a></li>
+              <li><a href="testimonial.html">Testimonial</a></li>
+              <li><a class="active" href="faq.html">FAQ</a></li>
+              <li><a href="404.html">404</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+            <ul class="dropdown">
+              <li><a href="blog.html">Blog </a></li>
+              <!-- <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a></li>
+              <li><a href="blog-grid-full-width.html"> Blog full width </a></li> -->
+              <li><a href="single-post.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <li>
+            <a>My Account</a>
+            <ul class="dropdown">
+              <li><a href="account-profile-setting.html"><i class="lni-home"></i> Account Home</a></li>
+              <!-- <li><a href="account-myads.html"><i class="lni-wallet"></i> My Ads</a></li>
+              <li><a href="account-favourite-ads.html"><i class="lni-heart"></i> Favourite ads</a></li>
+              <li><a href="account-archived-ads.html"><i class="lni-folder"></i> Archived</a></li>
+              <li><a href="login.html"><i class="lni-lock"></i> Log In</a></li>
+              <li><a href="signup.html"><i class="lni-user"></i> Signup</a></li>
+              <li><a href="forgot-password.html"><i class="lni-reload"></i> Forgot Password</a></li>
+              <li><a href="account-close.html"><i class="lni-close"></i>Account close</a></li> -->
+            </ul>
+          </li>
+          <a class="tg-btn" href="post-ads.html">
+              <i class="lni-pencil-alt"></i> Post Ad
+            </a>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url(assets/img/banner1.jpg);">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="product-title">Frequently Asked Questions</h2>
+              <ol class="breadcrumb">
+                <li><a href="index.html">Home /</a></li>
+                <li class="current">FAQ</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- FAQ Section Start -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Help Card -->
+            <div class="help-card">
+              <h4>Still need help?</h4>
+              <p>Can't find what you're looking for? Our support team is here to help!</p>
+              <div class="contact-options">
+                <a href="contact.html" class="contact-option">
+                  <i class="lni-envelope"></i> Contact Support
+                </a>
+                <a href="#" class="contact-option">
+                  <i class="lni-phone"></i> Call Us
+                </a>
+                <a href="#" class="contact-option">
+                  <i class="lni-comments"></i> Live Chat
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search FAQ -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="search-faq">
+              <input type="text" id="faqSearch" class="form-control" placeholder="Search for answers...">
+            </div>
+          </div>
+        </div>
+
+        <!-- Getting Started -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="faq-category">
+              <h3><i class="lni-rocket"></i> Getting Started</h3>
+              
+              <div class="faq-item">
+                <button class="faq-question">How do I create an account?</button>
+                <div class="faq-answer">
+                  <p>Creating an account is simple and free! Click on the "Sign Up" button in the top navigation, fill in your basic information including name, email, and password. You'll receive a confirmation email to verify your account. Once verified, you can start posting ads immediately.</p>
+                  <!-- Future Enhancement: Add step-by-step visual guide -->
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">Is it free to post ads?</button>
+                <div class="faq-answer">
+                  <p>Yes! We offer a free Basic plan that allows you to post up to 3 ads per month. For users who need to post more frequently, we have Professional and Business plans with additional features and benefits. Check our <a href="pricing.html">Pricing</a> page for detailed information about all plans.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">What types of items can I sell?</button>
+                <div class="faq-answer">
+                  <p>You can sell almost anything legal! Popular categories include vehicles, electronics, furniture, clothing, books, services, and real estate. However, we prohibit the sale of illegal items, weapons, adult content, counterfeit goods, and any items that violate local laws or our terms of service.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">How do I post my first ad?</button>
+                <div class="faq-answer">
+                  <p>Posting an ad is easy! Click the "Post Ad" button, choose your category, fill in the details about your item or service, upload photos, set your price, and provide contact information. Your ad will be reviewed and typically published within 24 hours. Make sure to provide accurate descriptions and clear photos for better results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Account & Security -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="faq-category">
+              <h3><i class="lni-shield"></i> Account & Security</h3>
+              
+              <div class="faq-item">
+                <button class="faq-question">How do I reset my password?</button>
+                <div class="faq-answer">
+                  <p>If you've forgotten your password, click on the "Forgot Password" link on the login page. Enter your registered email address, and we'll send you a password reset link. The link is valid for 24 hours. If you don't receive the email, check your spam folder or contact our support team.</p>
+                  <!-- Future Enhancement: Implement password reset functionality -->
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">Is my personal information secure?</button>
+                <div class="faq-answer">
+                  <p>Absolutely! We use industry-standard encryption and security measures to protect your personal information. Your data is stored securely and we never share your information with third parties without your consent, except as required by law. We also offer two-factor authentication for added security.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">Can I change my username?</button>
+                <div class="faq-answer">
+                  <p>Yes, you can change your username once every 30 days. Go to your account settings, click on "Edit Profile," and enter your new username. Note that your old username will become available for others to use, so choose wisely!</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">How do I delete my account?</button>
+                <div class="faq-answer">
+                  <p>We're sorry to see you go! To delete your account, go to Account Settings and click on "Delete Account." Please note that this action is permanent and cannot be undone. Your active ads will be removed, and your data will be deleted in accordance with our privacy policy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Buying & Selling -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="faq-category">
+              <h3><i class="lni-exchange"></i> Buying & Selling</h3>
+              
+              <div class="faq-item">
+                <button class="faq-question">How do I know if a seller is trustworthy?</button>
+                <div class="faq-answer">
+                  <p>Look for verified seller badges, read reviews from other buyers, check their response rate, and review their posting history. Always meet in safe, public places for transactions, and never share financial information before meeting in person. Trust your instincts - if something seems too good to be true, it probably is.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">What payment methods are recommended?</button>
+                <div class="faq-answer">
+                  <p>We recommend cash for in-person transactions, or using secure payment platforms like PayPal for online deals. Avoid wire transfers, gift cards, or unusual payment methods. Never pay in full before receiving the item, and always get a receipt for your transaction.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">How do I report a suspicious ad or user?</button>
+                <div class="faq-answer">
+                  <p>If you encounter a suspicious ad or user, click the "Report" button on the ad page or user profile. You can also email our support team at support@a-services.com with details. We take all reports seriously and investigate them promptly to maintain a safe marketplace.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">What if I have a dispute with a buyer or seller?</button>
+                <div class="faq-answer">
+                  <p>First, try to resolve the issue directly with the other party through our messaging system. If that doesn't work, contact our support team for mediation. We can help facilitate communication and, if necessary, take appropriate action based on our terms of service.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing & Payments -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="faq-category">
+              <h3><i class="lni-credit-cards"></i> Pricing & Payments</h3>
+              
+              <div class="faq-item">
+                <button class="faq-question">What payment methods do you accept for premium plans?</button>
+                <div class="faq-answer">
+                  <p>We accept all major credit cards (Visa, MasterCard, American Express, Discover), PayPal, and bank transfers for annual plans. All payments are processed securely through our payment partners. We also offer invoicing for business accounts.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">Can I get a refund?</button>
+                <div class="faq-answer">
+                  <p>We offer a 30-day money-back guarantee for all paid plans. If you're not satisfied with your subscription, contact our support team within 30 days of purchase for a full refund. Add-on features and featured listings are non-refundable once published.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">Do unused features roll over to the next month?</button>
+                <div class="faq-answer">
+                  <p>Free ad allowances do not roll over to the next month. However, any purchased add-ons like featured listings can be used whenever you want within your subscription period. We recommend using your full allowance each month to get the most value from your plan.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">Are there any hidden fees?</button>
+                <div class="faq-answer">
+                  <p>No hidden fees! The price you see is the price you pay. We're transparent about all costs. The only additional charges are for optional add-ons that you specifically choose to purchase, like featuring your ad or marking it as urgent.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Support -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="faq-category">
+              <h3><i class="lni-cog"></i> Technical Support</h3>
+              
+              <div class="faq-item">
+                <button class="faq-question">Why isn't my ad showing up?</button>
+                <div class="faq-answer">
+                  <p>Ads typically go live within 24 hours after submission. If your ad isn't showing, it might be under review, or there could be an issue with the content. Check your email for any notifications from us. Make sure your ad complies with our guidelines and doesn't contain prohibited content.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">How do I upload photos to my ad?</button>
+                <div class="faq-answer">
+                  <p>When posting an ad, click the "Upload Images" button and select photos from your device. You can upload up to 10 images depending on your plan. For best results, use clear, well-lit photos that show the item from multiple angles. Supported formats include JPG, PNG, and GIF, with a maximum file size of 5MB per image.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">Is there a mobile app?</button>
+                <div class="faq-answer">
+                  <p>Yes! Our mobile app is available for both iOS and Android devices. You can download it from the App Store or Google Play Store. The app allows you to browse, post, and manage ads on the go, with all the features of the desktop version optimized for mobile use.</p>
+                  <!-- Future Enhancement: Add app download links -->
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">How do I contact customer support?</button>
+                <div class="faq-answer">
+                  <p>You can reach our support team through multiple channels: email at support@a-services.com, phone at +1 (555) 123-4567 during business hours (9 AM - 6 PM EST), or through our live chat feature available on the website. Premium plan members get priority support with faster response times.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section End -->
+
+    <!-- Subscribe Section Start -->
+    <section class="subscribes section-padding">
+      <div class="container">
+        <div class="row wrapper-sub">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Join our 10,000+ subscribers and get access to the latest services, offer, discount and pleasure!</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <form>
+              <div class="subscribe">
+                <input class="form-control" name="email" placeholder="Your email here" required="" type="email">
+                <button class="btn btn-common" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <!-- Footer Area Start -->
+      <section class="footer-Content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">About Us</h3>
+                <div class="textwidget">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis. Etiam euismod ornare elementum. Sed ex est, consectetur eget facilisis sed, auctor ut purus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Useful Links</h3>
+                <ul class="menu">
+                  <li><a href="#">How to Use Services</a></li>
+                  <li><a href="#">Membership Details</a></li>
+                  <li><a href="#">Why Choose Us</a></li>
+                  <li><a href="#">Latest Services</a></li>
+                  <li><a href="#">Using This Platform</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Help & Support</h3>
+                <ul class="menu">
+                  <li><a href="#">Terms & Condition</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Risk Protection</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Contact Information</h3>
+                <ul class="contact-footer">
+                  <li>
+                    <strong>Address :</strong><span>1900 Pico Blvd, New York</span>
+                  </li>
+                  <li>
+                    <strong>Phone :</strong><span>+48 123 456 789</span>
+                  </li>
+                  <li>
+                    <strong>E-mail :</strong><span><a href="#">info@a-services.com</a></span>
+                  </li>
+                </ul>  
+                <ul class="footer-social">
+                  <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a></li>
+                  <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
+                </ul>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer area End -->
+      
+      <!-- Copyright Start  -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="site-info float-left">
+                <p>All copyrights reserved &copy; 2026 - Designed by MVC Co.</p>
+              </div>              
+              <div class="float-right">  
+                <ul class="bottom-card">
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card1.jpg" alt="card"></a>
+                  </li>
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card2.jpg" alt="card"></a>
+                  </li>
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card3.jpg" alt="card"></a>
+                  </li>
+                  <li>
+                      <a href="#"><img src="assets/img/footer/card4.jpg" alt="card"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright End -->
+
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Custom JavaScript for FAQ Page -->
+    <script>
+      $(document).ready(function() {
+        // FAQ Accordion functionality
+        $('.faq-question').on('click', function() {
+          const $this = $(this);
+          const $answer = $this.next('.faq-answer');
+          
+          // Close other FAQs in the same category
+          $this.closest('.faq-category').find('.faq-question').not($this).removeClass('active');
+          $this.closest('.faq-category').find('.faq-answer').not($answer).removeClass('show');
+          
+          // Toggle current FAQ
+          $this.toggleClass('active');
+          $answer.toggleClass('show');
+        });
+
+        // Search functionality
+        $('#faqSearch').on('input', function() {
+          const searchTerm = $(this).val().toLowerCase();
+          
+          if (searchTerm.length > 2) {
+            $('.faq-item').each(function() {
+              const $item = $(this);
+              const question = $item.find('.faq-question').text().toLowerCase();
+              const answer = $item.find('.faq-answer').text().toLowerCase();
+              
+              if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                $item.show();
+                // Highlight matching FAQ
+                if (question.includes(searchTerm)) {
+                  $item.find('.faq-question').addClass('text-primary font-weight-bold');
+                }
+              } else {
+                $item.hide();
+              }
+            });
+            
+            // Hide empty categories
+            $('.faq-category').each(function() {
+              const $category = $(this);
+              const visibleItems = $category.find('.faq-item:visible').length;
+              if (visibleItems === 0) {
+                $category.hide();
+              } else {
+                $category.show();
+              }
+            });
+          } else {
+            // Reset view
+            $('.faq-item').show();
+            $('.faq-category').show();
+            $('.faq-question').removeClass('text-primary font-weight-bold');
+          }
+        });
+
+        // Smooth scroll to FAQ when clicking from other pages
+        if (window.location.hash) {
+          const targetFAQ = $(window.location.hash);
+          if (targetFAQ.length) {
+            $('html, body').animate({
+              scrollTop: targetFAQ.offset().top - 100
+            }, 1000);
+            
+            // Open the FAQ
+            targetFAQ.find('.faq-question').addClass('active');
+            targetFAQ.find('.faq-answer').addClass('show');
+          }
+        }
+
+        // Track FAQ views for analytics
+        $('.faq-question').on('click', function() {
+          const question = $(this).text();
+          // Future Enhancement: Send analytics data to backend
+          console.log('FAQ viewed:', question);
+        });
+
+        // Add keyboard navigation
+        $(document).on('keydown', function(e) {
+          if (e.key === 'Escape') {
+            // Close all FAQs when ESC is pressed
+            $('.faq-question').removeClass('active');
+            $('.faq-answer').removeClass('show');
+          }
+        });
+
+        // Print FAQ functionality
+        $('.help-card').append('<button class="btn btn-light btn-sm mt-3" onclick="window.print()"><i class="lni-printer"></i> Print FAQ</button>');
+      });
+    </script>
+
+  </body>
+</html>
