@@ -22,6 +22,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <!-- Enhanced Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive-enhanced.css">
 
   </head>
   <body>
@@ -39,7 +41,7 @@
               <span class="lni-menu"></span>
               <span class="lni-menu"></span>
             </button>
-            <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+            <a href="index.html" class="navbar-brand"><img src="assets/img/logo1.png" alt=""></a>
           </div>
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mr-auto">
@@ -366,6 +368,214 @@
     </section>
     <!-- Category Section End -->
 
+    <!-- Product Listings Section Start -->
+    <section class="product-listings section-padding">
+      <div class="container">
+        <div class="row">
+          <!-- Filters Sidebar -->
+          <div class="col-lg-3 col-md-4">
+            <div class="filters-sidebar">
+              <h3>Filters</h3>
+              
+              <!-- Price Filter -->
+              <div class="filter-group">
+                <h4>Price Range</h4>
+                <div class="price-filter">
+                  <input type="number" placeholder="Min" class="form-control mb-2">
+                  <input type="number" placeholder="Max" class="form-control">
+                </div>
+              </div>
+
+              <!-- Location Filter -->
+              <div class="filter-group">
+                <h4>Location</h4>
+                <select class="form-control">
+                  <option>All Locations</option>
+                  <option>Delhi</option>
+                  <option>Mumbai</option>
+                  <option>Bengaluru</option>
+                  <option>Hyderabad</option>
+                  <option>Pune</option>
+                </select>
+              </div>
+
+              <!-- Category Filter -->
+              <div class="filter-group">
+                <h4>Category</h4>
+                <div class="checkbox-group">
+                  <label><input type="checkbox"> Vehicles</label>
+                  <label><input type="checkbox"> Electronics</label>
+                  <label><input type="checkbox"> Real Estate</label>
+                  <label><input type="checkbox"> Mobiles</label>
+                  <label><input type="checkbox"> Laptops</label>
+                </div>
+              </div>
+
+              <!-- Condition Filter -->
+              <div class="filter-group">
+                <h4>Condition</h4>
+                <div class="checkbox-group">
+                  <label><input type="checkbox"> New</label>
+                  <label><input type="checkbox"> Used</label>
+                  <label><input type="checkbox"> Refurbished</label>
+                </div>
+              </div>
+
+              <button class="btn btn-common btn-block">Apply Filters</button>
+            </div>
+          </div>
+
+          <!-- Product Listings -->
+          <div class="col-lg-9 col-md-8">
+            <div class="products-header">
+              <h3>All Products</h3>
+              <div class="sort-options">
+                <select class="form-control">
+                  <option>Sort by: Latest</option>
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+                  <option>Most Popular</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Product Listing 1 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
+                <div class="product-listing-card">
+                  <div class="product-image">
+                    <img src="https://picsum.photos/seed/product1/300/200.jpg" alt="Product" class="img-fluid">
+                    <div class="product-badge">New</div>
+                  </div>
+                  <div class="product-info">
+                    <h4><a href="ads-details.html">iPhone 13 Pro</a></h4>
+                    <p class="price">$899</p>
+                    <p class="location"><i class="lni-map-marker"></i> Delhi</p>
+                    <p class="seller"><i class="lni-user"></i> John Doe</p>
+                    <div class="product-actions">
+                      <a href="ads-details.html" class="btn btn-common">View Details</a>
+                      <a href="#" class="favorite"><i class="lni-heart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Listing 2 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
+                <div class="product-listing-card">
+                  <div class="product-image">
+                    <img src="https://picsum.photos/seed/product2/300/200.jpg" alt="Product" class="img-fluid">
+                  </div>
+                  <div class="product-info">
+                    <h4><a href="ads-details.html">MacBook Pro 16"</a></h4>
+                    <p class="price">$2,499</p>
+                    <p class="location"><i class="lni-map-marker"></i> Mumbai</p>
+                    <p class="seller"><i class="lni-user"></i> Jane Smith</p>
+                    <div class="product-actions">
+                      <a href="ads-details.html" class="btn btn-common">View Details</a>
+                      <a href="#" class="favorite"><i class="lni-heart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Listing 3 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
+                <div class="product-listing-card">
+                  <div class="product-image">
+                    <img src="https://picsum.photos/seed/product3/300/200.jpg" alt="Product" class="img-fluid">
+                    <div class="product-badge">Featured</div>
+                  </div>
+                  <div class="product-info">
+                    <h4><a href="ads-details.html">Toyota Camry 2022</a></h4>
+                    <p class="price">$25,000</p>
+                    <p class="location"><i class="lni-map-marker"></i> Bengaluru</p>
+                    <p class="seller"><i class="lni-user"></i> Mike Johnson</p>
+                    <div class="product-actions">
+                      <a href="ads-details.html" class="btn btn-common">View Details</a>
+                      <a href="#" class="favorite"><i class="lni-heart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Listing 4 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
+                <div class="product-listing-card">
+                  <div class="product-image">
+                    <img src="https://picsum.photos/seed/product4/300/200.jpg" alt="Product" class="img-fluid">
+                  </div>
+                  <div class="product-info">
+                    <h4><a href="ads-details.html">Samsung 55" 4K TV</a></h4>
+                    <p class="price">$799</p>
+                    <p class="location"><i class="lni-map-marker"></i> Hyderabad</p>
+                    <p class="seller"><i class="lni-user"></i> Sarah Wilson</p>
+                    <div class="product-actions">
+                      <a href="ads-details.html" class="btn btn-common">View Details</a>
+                      <a href="#" class="favorite"><i class="lni-heart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Listing 5 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
+                <div class="product-listing-card">
+                  <div class="product-image">
+                    <img src="https://picsum.photos/seed/product5/300/200.jpg" alt="Product" class="img-fluid">
+                  </div>
+                  <div class="product-info">
+                    <h4><a href="ads-details.html">2BHK Apartment</a></h4>
+                    <p class="price">$450/month</p>
+                    <p class="location"><i class="lni-map-marker"></i> Pune</p>
+                    <p class="seller"><i class="lni-user"></i> Robert Brown</p>
+                    <div class="product-actions">
+                      <a href="ads-details.html" class="btn btn-common">View Details</a>
+                      <a href="#" class="favorite"><i class="lni-heart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Listing 6 -->
+              <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4">
+                <div class="product-listing-card">
+                  <div class="product-image">
+                    <img src="https://picsum.photos/seed/product6/300/200.jpg" alt="Product" class="img-fluid">
+                    <div class="product-badge">Hot</div>
+                  </div>
+                  <div class="product-info">
+                    <h4><a href="ads-details.html">iPad Pro 12.9"</a></h4>
+                    <p class="price">$1,099</p>
+                    <p class="location"><i class="lni-map-marker"></i> Delhi</p>
+                    <p class="seller"><i class="lni-user"></i> Emily Davis</p>
+                    <div class="product-actions">
+                      <a href="ads-details.html" class="btn btn-common">View Details</a>
+                      <a href="#" class="favorite"><i class="lni-heart"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination-wrapper">
+              <ul class="pagination">
+                <li><a href="#"><i class="lni-chevron-left"></i></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">10</a></li>
+                <li><a href="#"><i class="lni-chevron-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Listings Section End -->
+
     <!-- Subscribe Section Start -->
     <section class="subscribes section-padding">
       <div class="container">
@@ -457,7 +667,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="site-info float-left">
-                <p>All copyrights reserved &copy; 2026 - Designed by MVC Co.</p>
+                <p>All copyrights reserved &copy; 2026</p>
               </div>              
               <div class="float-right">  
                 <ul class="bottom-card">
